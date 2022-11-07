@@ -1,0 +1,13 @@
+gitflsStartTemplate/
+node_modules/
+phpmailer/
+package-lock.json
+Source/
+**/*.zip
+version.json
+undefined
+**/*.rar
+config/
+beautis - git/
+gulpfile.js
+package.json

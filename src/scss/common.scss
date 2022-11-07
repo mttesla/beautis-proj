@@ -1,0 +1,135 @@
+// Заголовки, общие БЄМ блоки и проче...
+.section-title {
+    @include adaptiveValue("font-size", 48, 36);
+    @include adaptiveValue("line-height", 48, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+.subtitles-text {
+    font-weight: 700;
+    font-size: rem(12);
+}
+
+.capital-subtitle {
+    color: $green;
+    font-size: rem(12);
+    line-height: rem(20);
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: rem(10);
+}
+.section-title {
+    color: $green;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 48, 36);
+    @include adaptiveValue("line-height", 48, 36);
+}
+
+.hover-effect {
+    font-weight: 700;
+    font-size: rem(12);
+    line-height: math.div(20 , 18);
+    &::after {
+        content: "";
+        position: relative;
+        cursor: pointer;
+    }
+    
+    &::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        background: $green;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.2s 0.1s ease-in-out;
+    }
+
+    &:hover {
+        &::after {
+        width: 100%;
+        }
+    }
+}
+
+.in-stock {
+    &::before {
+        @extend %ic;
+        content: "\e908";
+        margin-right: 5px;
+    }
+}
+
+.price {
+
+    // .price__unactual
+
+    &__unactual {
+        color: rgba($color: #000000, $alpha: 0);
+        font-weight: 700;
+        letter-spacing: -3%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(48, 96, 73, 0.5);
+        position: relative;
+        &::after {
+            content: "";
+            height: 2px;
+            right: 0;
+            width: 100%;
+            background: #000;
+            position: absolute;
+            transform: rotate(-20deg);
+            top: 50%;
+        }
+        &::before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            left: 0;
+            background: #000;
+            position: absolute;
+            transform: rotate(20deg);
+            top: 50%;
+        }
+    }
+
+    // .price__actual
+
+    &__actual {
+        color: $green;
+        font-weight: 700;
+        letter-spacing: -3%;
+    }
+}
+
+.components-subtitle {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: #000;
+    margin-bottom: rem(30);
+}
+
+.reviews-subtitle {
+}
+.components-subtitle {
+}
+
+.font-menu {
+    font-weight: 700;
+    font-size: rem(14);
+    letter-spacing: 4%;
+    line-height: rem(20);
+    color: #000;
+    text-transform: uppercase;
+}
+

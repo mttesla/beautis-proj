@@ -1,0 +1,164 @@
+// <RATING>
+// Снипет (HTML): rating
+.rating {
+	display: flex;
+	align-items: flex-end;
+	font-size: 40px;
+	line-height: 0.75;
+	transition: opacity 0.3s ease 0s;
+}
+.rating.rating_sending {
+	opacity: 0.2;
+}
+.rating.rating_set .rating__active,
+.rating.rating_set .rating__item {
+	cursor: pointer;
+}
+
+.rating__body {
+	position: relative;
+}
+.rating__body::before {
+	content: "★★★★★";
+	display: block;
+	color: rgba($color: #000000, $alpha: 0);
+	-webkit-text-stroke: 1px $gold;
+}
+.rating__active {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	
+}
+.rating__active::before {
+	content: "★★★★★";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: $gold;
+}
+
+.rating__items {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.rating__item {
+	flex: 0 0 20%;
+	height: 100%;
+	opacity: 0;
+}
+.rating__value {
+	font-size: 50%;
+	line-height: 1;
+	padding: 0px 0px 0px 10px;
+}
+
+//========================================================================================================================================================
+// Rating Scorecard
+
+
+
+.row {
+	display: flex;
+	flex-direction: column;
+}
+.column {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+#content-main {
+	font-family: Manrope;
+	font-size: 14px;
+	color: #E3B891;
+}
+
+.content {
+	width: 100%;
+	margin: 20px auto 0 auto;
+}
+
+.content-heading {
+	margin-right: 25px;
+	font-size: 25px;
+}
+.content-rating {
+	text-align: center;
+	font-size: 37px;
+}
+
+.fa {
+	color: rgba($color: #000000, $alpha: 0);
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(48, 96, 73, 0.5);
+	content: "★";
+}
+
+.rating-num {
+	position: relative;
+	&::before {
+		content: "★";
+		position: absolute;
+		color: #000000;
+		font-size: rem(20);
+		right: -5px;
+		transform: translateY(-20%);
+	}
+}
+
+.active-rating {
+	color: $gold;
+    -webkit-text-stroke-color: $gold;
+}
+
+/* three column layout */
+.col-1, .col-3 {
+	width: 15%;
+	float: left;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+.col-2 {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.col-3 {
+	text-align: right;
+}
+
+/* clear floats after the columns */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* bar container */
+.bar-container {
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	color: white;
+}
+
+/* bars */
+.bar {
+	height: 8px;
+}
+
+.bar-star {
+	background-color: #E3B891;
+}

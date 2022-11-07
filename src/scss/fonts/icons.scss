@@ -1,0 +1,87 @@
+%ic {
+	font-family: "icomoon";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+
+.icon-Callback-v2:before {
+	content: "\e903";
+}
+.icon-Cart:before {
+	content: "\e905";
+}
+.icon-Delivery-Free:before {
+	content: "\e906";
+}
+.icon-Minus:before {
+	content: "\e907";
+}
+.icon-Ok2:before {
+	content: "\e908";
+}
+.icon-Plus:before {
+	content: "\e909";
+}
+.icon-Profile:before {
+	content: "\e90a";
+}
+.icon-Search:before {
+	content: "\e90b";
+}
+.icon-Send:before {
+	content: "\e90c";
+}
+.icon-Sort:before {
+	content: "\e90f";
+}
+.icon-ArrowRight:before {
+	content: "\e913";
+}
+.icon-Delivery:before {
+	content: "\e902";
+}
+.icon-Callback:before {
+	content: "\e901";
+}
+.icon-Arrow-down:before {
+	content: "\e900";
+}
+.icon-Beautis-Logo:before {
+	content: "\e904";
+}
+.icon-Disabled:before {
+	content: "\e90d";
+}
+.icon-Fb:before {
+	content: "\e90e";
+}
+.icon-Insta:before {
+	content: "\e910";
+}
+.icon-LogoLetter:before {
+	content: "\e911";
+}
+.icon-Master:before {
+	content: "\e912";
+}
+.icon-OneClickText:before {
+	content: "\e916";
+}
+.icon-Star:before {
+	content: "\e91c";
+}
+.icon-Visa:before {
+	content: "\e91e";
+}
