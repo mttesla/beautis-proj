@@ -5,4 +5,5 @@
 2. If you have not used GULP, WEBPACK, and the NPM package manager up to this point, you should download and install Node.js . 
 https://nodejs.org/en/
 Download the version recommended for most.
-
+3. If you have not used the GULP collector up to this point, enter the command npm i gulp-cli -g.
+4. After GULP installation is complete, enter the command npm i
