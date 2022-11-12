@@ -1,4 +1,4 @@
-**How to download and view beautis.**
+***How to download and view beautis.***
 
 
 1. the first step is to download all the files of this repository
