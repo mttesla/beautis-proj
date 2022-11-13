@@ -9,5 +9,11 @@ Download the version recommended for most.
 
 
 ### Dependency Error
-If you receive an ERR message! red is a critical error and it needs to be corrected. To solve the problem, run the command npm i --legacy-peer-deps, this will start the installation process ignoring such incompatibilities.
-Remember — the NodeJS and Python versions on your system must be fresh versions.
+If you receive an **ERR!** message red is a critical error and it needs to be corrected. To solve the problem, run the command **npm i --legacy-peer-deps**, this will start the installation process ignoring such incompatibilities.
+Remember — the NodeJS and Python versions on your system must be new versions.
+
+After successful installation, you will have the **node_modules** folder and the **package-lock.json** files.
+
+
+#### Installation is complete
+
