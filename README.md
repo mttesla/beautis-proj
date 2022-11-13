@@ -13,7 +13,10 @@ If you receive an **ERR!** message red is a critical error and it needs to be co
 Remember — the NodeJS and Python versions on your system must be new versions.
 
 After successful installation, you will have the **node_modules** folder and the **package-lock.json** files.
+Installation is complete.
+
+### Template launch and operating modes
+Developer mode. **npm run dev** startup command.
 
 
-#### Installation is complete
-
+Good job. You've opened a project :)
