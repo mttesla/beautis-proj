@@ -22,4 +22,4 @@ Developer mode. **npm run dev** startup command.
 Good job. You've opened a project :)
 
 
-You can also watch the [result](f0742984.xsph.ru) here.
+You can also watch the (f0742984.xsph.ru)[result] here.
